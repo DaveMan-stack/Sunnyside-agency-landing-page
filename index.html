@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+
+  <link rel="stylesheet" href="./dist/css/style.css">
+
+  <script defer src="./dist/js/main.js"></script>
+</head>
+<body>
+  <header class="overflow-hidden bg-DarkModerateCyan flex flex-col h-screen relative">
+    <div class="container flex items-center justify-between mt-5 mx-auto">
+      <img class="md:h-8" src="./images/logo.svg">
+      <nav class="mobile-nav bg-White text-center py-8 absolute w-4/5 top-20 transition-transform ease-out md:hidden">
+        <ul class="flex flex-col justify-center gap-6 text-DarkGrayishBlue font-bold text-lg">
+          <li><a>About</a></li>
+          <li><a>Services</a></li>
+          <li><a>Projects</a></li>
+          <li class="uppercase text-VeryDarkDesaturatedBlue text-lg rounded-full bg-Yellow w-36 mx-auto py-3 px-6"><a>Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="desktop-nav hidden md:flex md:items-center md:justify-end">
+        <ul class="flex justify-center items-center text-White text-lg md:gap-5 lg:gap-10">
+          <li class="flex items-center"><a href="">About</a></li>
+          <li class="flex items-center"><a href="">Services</a></li>
+          <li class="flex items-center"><a href="">Projects</a></li>
+          <li class="uppercase text-VeryDarkDesaturatedBlue text-lg text-center rounded-full bg-White w-36 mx-auto py-3 px-6 hover:opacity-50"><a>Contact</a></li>
+
+        </ul>
+      </nav>
+      <button class="toggle-menu hover:cursor-pointer md:hidden"><img src="./images/icon-hamburger.svg" alt="" srcset=""></button>
+    </div>
+    <h1 class="container mx-auto mt-20 uppercase text-4xl text-White font-bold text-center">WE ARE CREATIVES</h1>
+    <img class="h-28 w-28 object-contain mt-12 mx-auto" src="./images/icon-arrow-down.svg" alt="">
+  </header>
+
+  <main>
+    <section>
+      <div class="flex flex-col-reverse md:flex-row ">
+        <div class="py-20 md:flex md:flex-col md:justify-center md:p-8 md:py-4 md:w-2/4 lg:p-20">
+          <h2 class="text-VeryDarkDesaturatedBlue text-5xl font-bold text-center px-4 mb-10 md:text-4xl md:text-left md:px-0 md:mb-0 lg:mb-6 lg:text-5xl">Transform your brand</h2>
+
+          <p class="text-VeryDarkGrayishBlue p-8 text-center text-base md:text-left md:px-0 md:py-4 lg:text-lg lg:p-4 lg:py-6 md:max-w-xs lg:max-w-md">We are a full-service creative agency specializing in helping brands grow fast. 
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+
+          <span class="relative block mx-auto w-32 h-10 text-center font-bold text-xl uppercase text-VeryDarkDesaturatedBlue md:text-left md:mx-0 md:text-lg lg:text-xl after:transition-all after:ease-out hover:after:contents after:absolute after:-z-10 after:-left-1 after:bottom-3 after:w-0 after:h-3 after:rounded-lg after:bg-Yellow hover:after:w-32"><a class="">Learn more</a></span>
+        </div>
+        <img class="h-72 w-full object-cover md:hidden" src="./images/mobile/image-transform.jpg" alt="">
+        <img class="hidden object-cover w-2/4 md:block" src="./images/desktop/image-transform.jpg" alt="">
+      </div>
+      <div class="flex flex-col-reverse md:flex-row-reverse">
+        <div class="py-20 md:flex md:flex-col md:justify-center md:p-8 md:py-4 md:w-2/4 lg:p-20">
+          <h2 class="text-VeryDarkDesaturatedBlue text-5xl font-bold text-center px-4 mb-10 md:text-4xl md:text-left md:px-0 md:mb-0 lg:mb-6 lg:text-5xl">
+          Stand out to the right audience</h2>
+          <p class="text-VeryDarkGrayishBlue p-8 text-center text-base md:text-left md:px-0 md:py-4 lg:text-lg lg:p-4 lg:py-6 md:max-w-xs lg:max-w-md">Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places. </p>
+          <span class="relative block mx-auto w-32 h-10 text-center font-bold text-xl uppercase text-VeryDarkDesaturatedBlue md:text-left md:mx-0 md:text-lg lg:text-xl after:transition-all after:ease-out hover:after:contents after:absolute after:-z-10 after:-left-1 after:bottom-3 after:w-0 after:h-3 after:rounded-lg after:bg-SoftRed hover:after:w-32"><a href="">Learn More</a></span>
+        </div>
+        <img class="h-72 w-full object-cover md:w-2/4 md:h-full md:hidden" src="./images/mobile/image-stand-out.jpg" alt="">
+        <img class="hidden object-cover w-2/4 md:block" src="./images/desktop/image-stand-out.jpg" alt="">
+      </div>
+      <section class="md:flex">
+        <div class="graphic relative isolate max-h-full md:w-2/4">
+          <div class="absolute bottom-10 md:bottom-4">
+            <h2 class="text-DarkDesaturatedCyan text-3xl font-bold text-center px-4">
+              Graphic Design
+            </h2>
+              <p class="text-DarkDesaturatedCyan p-4 text-center text-base sm:px-8 md:text-lg">
+                Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.
+              </p>
+              
+          </div>
+          <img class="absolute inset-0 object-cover -z-10 h-full w-full sm:hidden" src="./images/mobile/image-graphic-design.jpg" alt="">
+          <img class="hidden absolute inset-0 object-cover -z-10 sm:h-full sm:w-full sm:block" src="./images/desktop/image-graphic-design.jpg" alt="">
+        </div>
+        <div class="photography relative isolate max-h-full md:w-2/4">
+          <div class="absolute bottom-10">
+            <h2 class="text-DarkBlue text-3xl font-bold text-center px-4">
+              Photography
+            </h2>
+            <p class="text-DarkBlue p-4 text-center text-base sm:px-8 md:text-lg">Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+          </div>
+          <img class="absolute inset-0 object-cover -z-10 h-full w-full sm:hidden" src="./images/mobile/image-photography.jpg" alt="">
+          <img class="hidden absolute inset-0 object-cover -z-10 sm:h-full sm:w-full sm:block" src="./images/desktop/image-photography.jpg" alt="">
+        </div>
+      </section>
+    </section>
+
+    <section class="py-20">
+      <h2 class="uppercase text-center font-bold text-xl text-VeryDarkGrayishBlue mb-20">Client testimonials</h2>
+      <section class="container mx-auto justify-center lg:flex">
+        <article class="text-center mb-10">
+          <img class="mx-auto rounded-full h-20 w-20 object-cover" src="./images/image-emily.jpg" alt="">
+          <p class="text-VeryDarkGrayishBlue p-8 text-center text-base">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h3 class="relative block text-center text-lg font-bold uppercase text-VeryDarkDesaturatedBlue">Emily R.</h3>
+          <span class="text-base text-DarkGrayishBlue">
+            Marketing Director</span>
+        </article>
+        <article class="text-center mb-10">
+          <img class="mx-auto rounded-full h-20 w-20 object-cover" src="./images/image-thomas.jpg" alt="">
+          <p class="text-VeryDarkGrayishBlue p-8 text-center text-base">Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h3 class="relative block text-center text-lg font-bold uppercase text-VeryDarkDesaturatedBlue">Thomas S.</h3>
+          <span class="text-base text-DarkGrayishBlue">
+            Chief Operating Officer
+          </span>
+        </article>
+        <article class="text-center">
+          <img class="mx-auto rounded-full h-20 w-20 object-cover" src="./images/image-jennie.jpg" alt="">
+          <p class="text-VeryDarkGrayishBlue p-8 text-center text-base">Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h3 class="relative block text-center text-lg font-bold uppercase text-VeryDarkDesaturatedBlue">Jennie F.</h3>
+          <span class="text-base text-DarkGrayishBlue">
+            Business Owner</span>
+        </article>
+      </section>
+    </section>
+    <section class="grid grid-cols-2 md:grid-cols-4">
+      <img class="md:hidden" src="./images/mobile/image-gallery-milkbottles.jpg" alt=""><img class="md:hidden" src="./images/mobile/image-gallery-orange.jpg" alt=""><img class="md:hidden" src="./images/mobile/image-gallery-cone.jpg" alt=""><img class="md:hidden" src="./images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+      <img src="./images/desktop/image-gallery-milkbottles.jpg" alt="" class="hidden md:block"><img src="./images/desktop/image-gallery-orange.jpg" alt="" class="hidden md:block"><img src="./images/desktop/image-gallery-cone.jpg" alt="" class="hidden md:block"><img src="./images/desktop/image-gallery-sugarcubes.jpg" alt="" class="hidden md:block">
+    </section>
+  </main>
+
+  <footer class="bg-DarkModerateCyan py-20 flex flex-col">
+    <section class="container mx-auto text-center">
+      <img class="mx-auto text-DarkDesaturatedCyan mb-10" src="./images/logo.svg" alt="">
+      <div class="links flex justify-center mb-14">
+        <ul class="flex gap-12 text-DarkDesaturatedCyan">
+          <li class="hover:text-White"><a>About</a></li>
+          <li class="hover:text-White"><a>Service</a></li>
+          <li class="hover:text-White"><a>Projects</a></li>
+        </ul>
+      </div>
+      <div class="socials flex gap-5 justify-center">
+        <img class="block hover:bg-White" src="./images/icon-facebook.svg" alt=""><img class="block hover:bg-White" src="./images/icon-instagram.svg" alt=""><img class="block hover:bg-White" src="./images/icon-twitter.svg" alt=""><img class="block hover:bg-White" src="./images/icon-pinterest.svg" alt="">
+      </div>
+    </section>
+  </footer>
+  
+
+  <div class="attribution bg-DarkModerateCyan text-White">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.twitter.com/_David_Conteh">David Conteh</a>.
+  </div>
+</body>
+</html>
